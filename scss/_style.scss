@@ -1,0 +1,196 @@
+@function imgUrl($file, $path: "background") {
+    @return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    background: $primary;
+
+    .navigation_bar {
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index: 1000;
+        background-color: $primary;
+
+        .capify {
+            padding: 30px;
+            border-radius: 0 0 20px 20px;
+            background: $green;
+        }
+    }
+
+    .banner {
+        margin-top: 112px;
+        padding: 40px 0 70px;
+
+        .banner_left, .banner_right {
+            padding: 60px;
+            overflow: hidden;
+        }
+
+        .banner_left {
+            .form_wrapper {
+                padding: 40px;
+
+                .loan_type_option {
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(200,169,249,0.2);
+                    padding: 24px 4px 20px;
+                    border-radius: 20px;
+                    text-align: center;
+                    font-weight: 700;
+                    letter-spacing: -0.01em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                #prevBtn {
+                    cursor: pointer;
+                }
+
+                .form_slider {    
+                    .slick-track {
+                        display: flex !important;
+                    }
+            
+                    .slick-slide {
+                        height: inherit !important;
+                    }
+
+                    .tab {
+                        @include media-breakpoint-down(sm) {
+                            .hero_heading {
+                                font-size: 3rem !important;
+                            }
+            
+                            .sub_heading {
+                                font-size: 1.125rem !important;
+                            }
+                        }
+            
+                        label {
+                            font-size: 1.125rem;
+                            font-weight: 600;
+                            margin-bottom: 12px;
+                        }
+            
+                        label.form-check-label {
+                            font-weight: 300;
+                            margin-bottom: 0;
+                        }
+            
+                        input[type=text],
+                        input[type=email],
+                        input[type=number] {
+                            background: none;
+                            border-radius: 0;
+                            border: none;
+                            border-bottom: 1px solid $white;
+                            padding: 0;
+                            font-size: 1.125rem;
+                            color: $white;
+            
+                            &::placeholder {
+                                color: $white;
+                                opacity: 0.5;
+                            }
+            
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+            
+                        .form-check {
+                            @include media-breakpoint-down(sm) {
+                                padding-left: 0;
+                                margin-bottom: 0;
+                            }
+                        }
+            
+                        .form-check-inline {
+                            @include media-breakpoint-up(md) {
+                                margin-right: 2.5rem;
+                            }
+                        }
+            
+            
+                        .form-check-input {
+                            display: none;
+                        }
+            
+                        .form-check-label {
+                            cursor: pointer;
+                            display: inline-block;
+                            font-size: 1rem;
+                            line-height: 1.5;
+                            padding: 14px 14px 14px 32px;
+                            position: relative;
+            
+                            &:hover,
+                            &:focus {
+                                .radio-button-circle:before {
+                                    border-color: $white;
+                                }
+                            }
+            
+                            &:active .radio-button-circle:before {
+                                transform: scale(1.1);
+                            }
+            
+                            @include media-breakpoint-down(sm) {
+                                font-size: 0.875rem;
+                            }
+                        }
+            
+                        .radio-button-circle {
+                            border-radius: 50%;
+                            cursor: pointer;
+                            display: block;
+                            height: 8px;
+                            left: 4px;
+                            position: absolute;
+                            top: 20px;
+                            transition: background-color .1s ease-out;
+                            vertical-align: middle;
+                            width: 8px;
+            
+                            &:before {
+                                border: 1px solid $white;
+                                border-radius: 50%;
+                                content: '';
+                                display: inline-block;
+                                height: 20px;
+                                position: absolute;
+                                top: -6px;
+                                transition: border-color .1s ease-out,
+                                    transform .1s ease-out;
+                                left: -6px;
+                                width: 20px;
+                            }
+                        }
+            
+                        .form-check-input:checked+.form-check-label .radio-button-circle {
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner_right {
+            background: imgUrl('banner_right.jpg') center top;
+        }        
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}
