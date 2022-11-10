@@ -1,8 +1,10 @@
 $primary: #320873;
+$primary-light: #eae2f6;
 $secondary: #5614BB;
 $secondary-light: #C8A9F9;
 $tertiary: #161529;
 $quaternary: #F33829;
+$palepurple: #bfb5cd;
 $green: #B7D432;
 $black: #000000;
 $white: #ffffff;
@@ -16,10 +18,12 @@ $theme-colors: (
     ) !default;
 
 $theme-colors: map-merge(("primary": $primary,
+            "primary-light": $primary-light,
             "secondary": $secondary,
             "secondary-light": $secondary-light,
             "tertiary": $tertiary,
             "quaternary":$quaternary,
+            "palepurple":$palepurple,
             "green":$green,
             "black": $black,
             "white": $white,
@@ -39,8 +43,10 @@ $font-sizes: (
     64: 64px,
     48: 48px,
     32: 32px,
+    24: 24px,
     20: 20px,
-    16: 16px
+    16: 16px,
+    14: 14px
 );
 
 // Grid Breakpoints

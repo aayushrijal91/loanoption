@@ -416,6 +416,86 @@ section.vision {
     }
 }
 
+section.testimonials {
+    background: $light;
+    padding: 162px 0;
+    
+    .about_testimonials {
+        transition: 0.4s all;
+        position: relative;
+
+        .section_left {
+            background: $primary;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            padding: 120px 80px;
+
+            .hero_heading {
+                padding: 116px 0;
+            }
+
+            .hanging_superhero {
+                position: absolute;
+                top: 0;
+                right: 81px;
+                animation: bounce2 5s infinite;
+
+                @keyframes bounce2 {
+
+                    0%,
+                    20%,
+                    50%,
+                    80%,
+                    100% {
+                        transform: translateY(-30px);
+                    }
+
+                    40% {
+                        transform: translateY(-60px);
+                    }
+
+                    60% {
+                        transform: translateY(-45px);
+                    }
+                }
+            }
+        }
+
+        .section_right {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            #testimonial_slider {
+                height: 100%;
+
+                .slick-list,
+                .slick-track {
+                    height: 100%;
+                }
+
+                .slick-track {
+                    display: flex !important;
+                }
+
+                .slick-slide {
+                    border-radius: 20px;
+                    background: $white;
+                    padding: 46px;
+                    height: inherit !important;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 16px;
+                }
+            }
+        }
+    }
+}
+
 footer {
     font-size: 0.875rem;
     background-color: #221f1f;

@@ -51,6 +51,13 @@ $(() => {
 
         loanSlider.slick('slickGoTo', $(this).attr('slideTarget'));
     });
+
+    $('#testimonial_slider').slick({
+        slidesToShow: 3,
+        arrows: false,
+        slidesToScroll: 1,
+        autoplay: true,
+    })
 });
 
 let formSlick = $("#form_slider").slick({
@@ -143,4 +150,9 @@ $('#borrowSlider').on('input', function () {
     $('#borrowAmount').html(formattedVal);
     $('.sliderThumb').css('left', (value * (95 / loanCap)) + "%");
     $('.progressBar').css('width', (value * (98 / loanCap)) + "%");
+});
+
+
+$('#seeTestimonials').on('click', function() {
+    $('.about_testimonials').css('transform', 'translateX(-100%)');
 });
