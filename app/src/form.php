@@ -18,10 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
-        $name = $_POST['name'];
+        $loanType = $_POST['loanType'];
+        $borrowAmount = $_POST['borrowAmount'];
+        $businessEntity = $_POST['businessEntity'];
+        $companyName = $_POST['companyName'];
+        $abn = $_POST['abn'];
+        $firstName = $_POST['firstName'];
+        $lastName = $_POST['lastName'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $message = $_POST['message'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -46,8 +51,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
                     </head>
                 <body><table><tbody>' .
             '<tr>' .
+            '<td>Loan Type</td>' .
+            '<td><b>' . strip_tags($loanType) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Borrow Amount</td>' .
+            '<td><b>' . strip_tags($borrowAmount) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Business Entity</td>' .
+            '<td><b>' . strip_tags($businessEntity) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Company Name</td>' .
+            '<td><b>' . strip_tags($companyName) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>ABN</td>' .
+            '<td><b>' . strip_tags($abn) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
             '<td>Name</td>' .
-            '<td><b>' . strip_tags($name) . '</b></td>' .
+            '<td><b>' . strip_tags($firstName) . ' ' . strip_tags($lastName) . '</b></td>' .
             '</tr>' .
             '<tr>' .
             '<td>Phone</td>' .
@@ -56,10 +81,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '<tr>' .
             '<td>Email Address</td>' .
             '<td><b>' . strip_tags($email) . '</b></td>' .
-            '</tr>' .
-            '<tr>' .
-            '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 
