@@ -282,6 +282,12 @@ header {
                 position: absolute;
                 top: 38%;
                 left: -10rem;
+
+                @include media-breakpoint-down(sm) {
+                    top: -1rem;
+                    left: 37%;
+                    transform: rotate(90deg);
+                }
             }
         }
 
@@ -584,6 +590,11 @@ section.vision {
             color: $secondary;
             font-size: 36px;
             transform: rotate(-15deg);
+
+            @include media-breakpoint-down(sm) {
+                font-size: 30px;
+                top: -1.5rem;
+            }
         }
 
         &::after {
