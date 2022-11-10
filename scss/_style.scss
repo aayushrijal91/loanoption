@@ -246,7 +246,7 @@ section.about_us {
 
 section.loan_security {
     background-color: $primary;
-    padding: 133px 0 193px;
+    padding: 133px 0 154px;
 
     .animated_text {
         color: $secondary-light;
@@ -257,6 +257,7 @@ section.loan_security {
         animation: bounce 5s infinite;
 
         @keyframes bounce {
+
             0%,
             20%,
             50%,
@@ -272,6 +273,145 @@ section.loan_security {
             60% {
                 transform: translateY(-45px)rotate(-15deg);
             }
+        }
+    }
+
+    .loans-slider-wrapper {
+        .slick-slide {
+            margin: 0 4px;
+        }
+
+        ul.loans-slider-nav {
+            display: flex;
+            position: relative;
+            padding: 0;
+            margin: 0 0 39px;
+            gap: 9px;
+
+            li {
+                list-style: none;
+
+                .loan-slider-btn {
+                    transition: 0.5s;
+                    padding: 6px 24px;
+                    position: relative;
+                    z-index: 5;
+                    height: 54px;
+                    border: 1px solid $secondary;
+                    border-radius: 100px;
+                }
+
+                &.slide {
+                    position: absolute;
+                    height: 54px;
+                    background: $secondary;
+                    border-radius: 100px;
+                    border: 1px solid $secondary;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+
+                &:nth-child(1).active~.slide,
+                &:nth-child(2).active~.slide,
+                &:nth-child(3).active~.slide {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .loans_slider {
+            padding-top: 17px;
+
+            .slick-track {
+                display: flex;
+            }
+
+            .slick-slide {
+                height: inherit;
+                padding: 52px;
+                background: $white;
+                border-radius: 20px;
+            }
+
+            .slick-dots {
+                display: flex !important;
+                bottom: -30px;
+                list-style-type: none;
+                justify-content: center;
+
+                @include media-breakpoint-up(md) {
+                    justify-content: start;
+                }
+
+                li {
+                    margin: 0 4.5px;
+                    width: 13px;
+                    height: 13px;
+
+                    button:before {
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+
+                button {
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                    padding: 0;
+                    border: none;
+                    background-color: $secondary-light;
+                    text-indent: -9999px;
+                    border-radius: 50%;
+                }
+
+                li.slick-active button {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}
+
+section.lenders {
+    background-color: $secondary;
+    padding: 147px 0;
+}
+
+section.vision {
+    padding: 132px 0;
+
+    .vision_card {
+        border-radius: 20px;
+        min-height: 574px;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+
+        &.fairness {
+            background: imgUrl('vision-fairness.jpg') center;
+        }
+
+        &.accuracy {
+            background: imgUrl('vision-accuracy.jpg') center;
+        }
+
+        &.speed {
+            background: imgUrl('vision-speed.jpg') center;
+        }
+
+        background-size: cover;
+
+        .fancyText {
+            font-family: $font-brusheo;
+            font-size: 30px;
+            color: $primary;
+            transform: rotate(-15deg);
         }
     }
 }

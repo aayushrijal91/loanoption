@@ -329,11 +329,103 @@
             <div class="col-xl-7">
                 <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">To secure, or not secure your loan?</div>
             </div>
-            <div class="col-auto"><div class="animated_text">That is the<br>question</div></div>
+            <div class="col-auto">
+                <div class="animated_text">That is the<br>question</div>
+            </div>
         </div>
         <div class="pt-4 pb-8 fs-20 text-light-grey">
-        We have said it before, and we’ll say it again, not every loan is the same! When you are applying for a loan it can be either an unsecured or secured loan. 
-Finding the right loan can be confusing and to make it easier we’ve defined the below.
+            We have said it before, and we’ll say it again, not every loan is the same! When you are applying for a loan it can be either an unsecured or secured loan.
+            Finding the right loan can be confusing and to make it easier we’ve defined the below.
+        </div>
+        <div class="loans-slider-wrapper" id="loans">
+            <div class="container">
+                <ul class="loans-slider-nav">
+                    <li class="active"><a href="javascript:void(0)" class="btn fw-600 text-white loan-slider-btn" slideTarget="0">Secured Loans</a></li>
+                    <li><a href="javascript:void(0)" class="btn fw-600 border-1 text-white loan-slider-btn" slideTarget="1">Unsecured Loans</a></li>
+                    <li class="slide"></li>
+                </ul>
+
+                <div class="loans_slider" id="loans_slider">
+                    <div class="loan-slider-content">
+                        <div class="row justify-content-between align-items-center h-100 gx-xl-5">
+                            <div class="col-7">
+                                <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Secured<span class="text-quaternary">.</span></div>
+                                <p class="fs-20 text-dark-grey pt-4">A secured loan uses the asset being purchased meaning collateral, in this case the car, as security for the loan. If you the borrower can’t repay the loan, the lender can reclaim the asset to cover the costs. Although if the sale of the asset doesn’t cover the full amount owing, the borrower must pay the difference.</p>
+                                <p class="fs-20 text-dark-grey">The benefits of a secured loan is that usually it comes with a lower and fixed rates, as the risk to your lender is lower.</p>
+                            </div>
+                            <div class="col">
+                                <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("secured-lock.png", "lib") ?></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loan-slider-content">
+                        <div class="row justify-content-between align-items-center h-100 gx-xl-5">
+                            <div class="col-7">
+                                <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Unsecured<span class="text-quaternary">.</span></div>
+                                <p class="fs-20 text-dark-grey pt-4">In an unsecured loan scenario the lender does not use any assets as a security
+                                    (no collateral). This comes with a higher charge interest rates when compared to secured as the risk is more for the lender.</p>
+                                <p class="fs-20 text-dark-grey">These types of loans are not generally for cars, because you can usually save money by using the vehicle as security. Some situations that an unsecured loan might be useful for a car, is if the car being purchased is not an acceptable asset for that specific lender, if the asset is too old or even if you wish to borrow more than the actual purchase price by a substantial amount to cover costs or customisations to the car.</p>
+                            </div>
+                            <div class="col">
+                                <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("unsecure-lock.png", "lib") ?></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="lenders">
+    <div class="container">
+        <div class="row align-items-center gx-xxl-7">
+            <div class="col-lg-6">
+                <div class="fs-96 text-white font-articulat-heavy lh-3 ls-2">No bull#@*% here.</div>
+                <div class="fs-20 text-secondary-light pt-5">
+                    We’ll tell you what you need to know, enquire with LoanOptions and take one step closer to getting your business loan.
+                </div>
+            </div>
+            <div class="col-lg"><?= renderImg("60-lenders.png", 'lib', 'w-100') ?></div>
+        </div>
+    </div>
+</section>
+
+<section class="vision">
+    <div class="container">
+        <div class="row align-items-center pb-7">
+            <div class="col-lg-5">
+                <div class="fs-96 text-primary font-articulat-heavy lh-3 ls-2">Our Vision<span class="text-quaternary">.</span></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fs-32 ls-2 fw-500">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="vision_card fairness">
+                    <div>
+                        <div class="fancyText">Justice!</div>
+                        <div class="fs-72 font-articulat-heavy lh-1 text-white">Fairness</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="vision_card accuracy">
+                    <div>
+                        <div class="fancyText">See That!</div>
+                        <div class="fs-72 font-articulat-heavy lh-1 text-white">Accuracy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="vision_card speed">
+                    <div>
+                        <div class="fancyText">Hella Fast!</div>
+                        <div class="fs-72 font-articulat-heavy lh-1 text-white">Speed</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

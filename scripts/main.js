@@ -29,7 +29,28 @@ $(() => {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
-    })
+    });
+
+    $('.loans-slider-wrapper ul li.slide').width($('.loans-slider-wrapper ul li:nth-child(1)').width());
+
+    let loanSlider = $('#loans_slider').slick({
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1,
+        dots: true
+    });
+
+    $('.loan-slider-btn').on('click', function () {
+        $(this).parents('li').siblings().removeClass("active");
+        $(this).parents('li').addClass('active');
+
+        $('.loans-slider-wrapper ul li:nth-child(1).active ~ .slide').width($('.loans-slider-wrapper ul li:nth-child(1)').width());
+        $('.loans-slider-wrapper ul li:nth-child(1).active ~ .slide').css('left', 0);
+        $('.loans-slider-wrapper ul li:nth-child(2).active ~ .slide').width($('.loans-slider-wrapper ul li:nth-child(2)').width());
+        $('.loans-slider-wrapper ul li:nth-child(2).active ~ .slide').css('left', $('.loans-slider-wrapper ul li:nth-child(1)').width() + 9);
+
+        loanSlider.slick('slickGoTo', $(this).attr('slideTarget'));
+    });
 });
 
 let formSlick = $("#form_slider").slick({
