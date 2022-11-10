@@ -29,6 +29,16 @@ $(() => {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 540, 
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                    autoplay: true,
+                }
+            }
+        ]
     });
 
     $('.loans-slider-wrapper ul li.slide').width($('.loans-slider-wrapper ul li:nth-child(1)').width());

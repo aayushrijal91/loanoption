@@ -2,20 +2,21 @@
     <div class="navigation_bar">
         <div class="container-fluid">
             <div class="row justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-auto">
+                <div class="col-md-auto">
                     <div class="row align-items-center">
-                        <div class="col-auto">
+                        <div class="col-auto order-2 order-md-1">
                             <div class="capify"><?= renderImg('capify.png', 'logo') ?></div>
                         </div>
-                        <div class="col-auto">
+                        <div class="col col-md-auto order-1 order-md-2">
                             <a href="./">
                                 <?= renderImg("logo.png", "logo") ?>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-auto">
-                    <div class="row justify-content-center align-items-center">
+                <hr>
+                <div class="col-md-auto">
+                    <div class="row justify-content-center align-items-center py-2 py-md-0">
                         <div class="col-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-primary text-white">
                                 <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,51 +40,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="banner_left h-100 bg-secondary rounded-20">
-                        <div class="fs-70 lh-1 text-white font-articulat-heavy ls-2 mb-3">Offering <span class="text-secondary-light">Business <br>Loans</span> from $5k - $2M<span class="text-quaternary">.</span></div>
-                        <div class="text-white fs-32 fw-700 ls-2 py-4 text-capitalize">Request a quick quote today</div>
+                    <div class="banner_left">
+                        <div class="fs-70 lh-1 text-white font-articulat-heavy ls-2 mb-3 text-center text-md-start">Offering <span class="text-secondary-light">Business <br>Loans</span> from $5k - $2M<span class="text-quaternary">.</span></div>
+                        <div class="text-white fs-32 fw-700 ls-2 py-4 text-capitalize text-center text-md-start">Request a quick quote today</div>
                         <form id="business_loan_form" method="POST" class="form_wrapper rounded-20 bg-white mt-3">
                             <div class="form_slider" id="form_slider">
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-4 lh-1">What type of Business Loan are you looking for?</div>
                                     <div class="form-group form-wrapper">
-                                        <div class="row radio-toolbar gx-2">
-                                            <div class="col">
+                                        <div class="row radio-toolbar g-3 gx-md-2">
+                                            <div class="col-4 col-md">
                                                 <input class="form-check-input" type="radio" name="loanType" value="Equipment" id="loantype_equipment">
                                                 <label class="form-check-label" for="loantype_equipment">
                                                     <?= renderImg("loan_type_1.png", "lib") ?>
                                                     <div class="pt-3">Equipment</div>
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-4 col-md">
                                                 <input class="form-check-input" type="radio" name="loanType" value="Cashflow" id="loantype_cashflow">
                                                 <label class="form-check-label" for="loantype_cashflow">
                                                     <?= renderImg("loan_type_2.png", "lib") ?>
                                                     <div class="pt-3">Cashflow</div>
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-4 col-md">
                                                 <input class="form-check-input" type="radio" name="loanType" value="Hiring Staff" id="loantype_hiring_staff">
                                                 <label class="form-check-label" for="loantype_hiring_staff">
                                                     <?= renderImg("loan_type_3.png", "lib") ?>
                                                     <div class="pt-3">Hiring Staff</div>
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-4 col-md">
                                                 <input class="form-check-input" type="radio" name="loanType" value="Inventory" id="loantype_inventory">
                                                 <label class="form-check-label" for="loantype_inventory">
                                                     <?= renderImg("loan_type_4.png", "lib") ?>
                                                     <div class="pt-3">Inventory</div>
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-4 col-md">
                                                 <input class="form-check-input" type="radio" name="loanType" value="Day to Day" id="loantype_day2day">
                                                 <label class="form-check-label" for="loantype_day2day">
                                                     <?= renderImg("loan_type_5.png", "lib") ?>
                                                     <div class="pt-3">Day to Day</div>
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-4 col-md">
                                                 <input class="form-check-input" type="radio" name="loanType" value="Others" id="loantype_others">
                                                 <label class="form-check-label" for="loantype_others">
                                                     <?= renderImg("loan_type_6.png", "lib") ?>
@@ -107,26 +108,26 @@
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-5">Entity of Business</div>
                                     <div class="form-group form-wrapper">
-                                        <div class="row radio-toolbar">
-                                            <div class="col">
+                                        <div class="row radio-toolbar gy-3">
+                                            <div class="col-6 col-md">
                                                 <input class="form-check-input" type="radio" name="businessEntity" value="Sole Trader" id="businessEntity_soleTrader">
                                                 <label class="form-check-label py-5" for="businessEntity_soleTrader">
                                                     Sole Trader
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-6 col-md">
                                                 <input class="form-check-input" type="radio" name="businessEntity" value="Partnership" id="businessEntity_partnership">
                                                 <label class="form-check-label py-5" for="businessEntity_partnership">
                                                     Partnership
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-6 col-md">
                                                 <input class="form-check-input" type="radio" name="businessEntity" value="Company" id="businessEntity_company">
                                                 <label class="form-check-label py-5" for="businessEntity_company">
                                                     Company
                                                 </label>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-6 col-md">
                                                 <input class="form-check-input" type="radio" name="businessEntity" value="Trust" id="businessEntity_trust">
                                                 <label class="form-check-label py-5" for="businessEntity_trust">
                                                     Trust
@@ -136,8 +137,21 @@
                                     </div>
                                 </div>
                                 <div class="tab">
+                                    <div class="fs-32 ls-2 fw-900 pb-5">Enter Business Information</div>
+                                    <div class="row gy-6">
+                                        <div class="col-md-6">
+                                            <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">company name?</span></div>
+                                            <input type="text" name="companyName" placeholder="Company">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">abn?</span></div>
+                                            <input type="text" name="abn" placeholder="ABN">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-5">Enter your Details</div>
-                                    <div class="row">
+                                    <div class="row gy-6">
                                         <div class="col-md-6">
                                             <div class="fs-20 fw-800 lh-1">What's your human <span class="text-secondary">first name?</span></div>
                                             <input type="text" name="firstName" placeholder="First Name">
@@ -150,7 +164,7 @@
                                 </div>
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-5">How can we Contact You</div>
-                                    <div class="row">
+                                    <div class="row gy-6">
                                         <div class="col-md-6">
                                             <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">email address?</span></div>
                                             <input type="email" name="email" placeholder="Email">
@@ -162,7 +176,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="buttons d-flex flex-column flex-md-row justify-content-center justify-content-md-start align-items-center flex-wrap mt-5">
+                            <div class="buttons d-flex justify-content-start align-items-center flex-wrap mt-5">
                                 <button type="button" id="nextBtn" class="btn btn-quaternary d-inline-flex rounded-pill border-white rounded-0 text-white px-5" onclick="nextPrev(1)">Next</button>
                                 <span class="px-3 py-md-0 py-2 text-tertiary" id="prevBtn" onclick="nextPrev(-1)">Go Back</span>
                             </div>
@@ -241,39 +255,39 @@
 
 <section class="loan_types">
     <div class="container">
-        <div class="fs-96 font-articulat-heavy text-capitalize ls-2 lh-1 pb-7">Types Of Business Loans<span class="text-quaternary">.</span></div>
-        <div class="row">
-            <div class="col">
+        <div class="fs-96 font-articulat-heavy text-capitalize ls-2 lh-1 pb-5 pb-md-7">Types Of Business Loans<span class="text-quaternary">.</span></div>
+        <div class="row g-3 gx-md-4">
+            <div class="col-6 col-md">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_1.png", "lib") ?>
                     <div class="pt-3">Equipment</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_2.png", "lib") ?>
                     <div class="pt-3">Cashflow</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_3.png", "lib") ?>
                     <div class="pt-3">Hiring Staff</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_4.png", "lib") ?>
                     <div class="pt-3">Inventory</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_5.png", "lib") ?>
                     <div class="pt-3">Day to Day</div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-6 col-md">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_6.png", "lib") ?>
                     <div class="pt-3">Others</div>

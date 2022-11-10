@@ -16,6 +16,21 @@ header {
             padding: 30px;
             border-radius: 0 0 20px 20px;
             background: $green;
+
+            @include media-breakpoint-down(sm) {
+                padding: 16px 10px;
+                border-radius: 0 0 11px 11px;
+            }
+        }
+
+        hr {
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+
+            background-color: #9159E8;
+            opacity: 0.2;
+            margin: 0;
         }
     }
 
@@ -23,15 +38,30 @@ header {
         margin-top: 112px;
         padding: 40px 0 70px;
 
-        .banner_left,
-        .banner_right {
-            padding: 60px;
-            overflow: hidden;
+        @include media-breakpoint-down(sm) {
+            background: $secondary;
+            padding: 40px 0;
         }
 
         .banner_left {
+            background: $secondary;
+            height: 100%;
+            border-radius: 20px;
+            padding: 60px;
+            overflow: hidden;
+            
+            @include media-breakpoint-down(sm) {
+                padding: 60px 0 30px;
+                background: none;
+                border-radius: 0;
+            }
+
             .form_wrapper {
                 padding: 40px;
+
+                @include media-breakpoint-down(sm) {
+                    padding: 40px 20px;
+                }
 
                 .loan_type_option {
                     height: 100%;
@@ -186,6 +216,12 @@ header {
             background-size: cover;
             display: flex;
             align-items: end;
+            padding: 60px;
+            overflow: hidden;
+
+            @include media-breakpoint-down(sm) {
+                padding: 150px 20px 40px;
+            }
         }
 
         .cta_slider {
@@ -208,6 +244,44 @@ header {
                 font-weight: 600;
                 text-transform: capitalize;
             }
+
+            .slick-dots {
+                display: flex !important;
+                bottom: -30px;
+                list-style-type: none;
+                justify-content: center;
+
+                @include media-breakpoint-up(md) {
+                    justify-content: start;
+                }
+
+                li {
+                    margin: 0 4.5px;
+                    width: 13px;
+                    height: 13px;
+
+                    button:before {
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+
+                button {
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                    padding: 0;
+                    border: none;
+                    background-color: $secondary-light;
+                    text-indent: -9999px;
+                    border-radius: 50%;
+                    opacity: 0.2;
+                }
+
+                li.slick-active button {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -215,6 +289,10 @@ header {
 section.loan_types {
     padding: 120px 0;
     background: $light;
+
+    @include media-breakpoint-down(sm) {
+        padding: 60px 0;
+    }
 
     .loan_type_option {
         height: 100%;
@@ -231,6 +309,11 @@ section.loan_types {
         min-height: 262px;
         color: $primary;
         font-size: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+            min-height: 196px;
+            font-size: 1.25rem;
+        }
     }
 }
 
@@ -419,7 +502,7 @@ section.vision {
 section.testimonials {
     background: $light;
     padding: 162px 0;
-    
+
     .about_testimonials {
         transition: 0.4s all;
         position: relative;
