@@ -91,6 +91,61 @@ header {
                         height: inherit !important;
                     }
 
+                    .slick-dots {
+                        display: flex !important;
+                        bottom: -81px;
+                        list-style-type: none;
+                        justify-content: end;
+
+                        @include media-breakpoint-down(sm) {
+                            bottom: -76px;
+                        }
+
+                        li {
+                            margin: 0 4.5px;
+                            width: 13px;
+                            height: 13px;
+
+                            button:before {
+                                width: 13px;
+                                height: 13px;
+                            }
+
+                            @include media-breakpoint-down(sm) {
+                                width: 10px;
+                                height: 10px;
+                                margin: 0 2.5px;
+
+                                button:before {
+                                    width: 10px;
+                                    height: 10px;
+                                }
+                            }
+                        }
+
+                        button {
+                            display: block;
+                            width: 13px;
+                            height: 13px;
+                            padding: 0;
+                            border: none;
+                            text-indent: -9999px;
+                            border-radius: 50%;
+                            background-color: $light-grey;
+                            opacity: 0.3;
+
+                            @include media-breakpoint-down(sm) {
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+
+                        li.slick-active button {
+                            background-color: $secondary;
+                            opacity: 0.6;
+                        }
+                    }
+
                     .tab {
                         @include media-breakpoint-down(sm) {
                             .hero_heading {
@@ -217,10 +272,16 @@ header {
             display: flex;
             align-items: end;
             padding: 60px;
-            overflow: hidden;
+            position: relative;
 
             @include media-breakpoint-down(sm) {
                 padding: 150px 20px 40px;
+            }
+
+            .arrow {
+                position: absolute;
+                top: 38%;
+                left: -10rem;
             }
         }
 
@@ -511,6 +572,31 @@ section.lenders {
 section.vision {
     padding: 132px 0;
 
+    .vision_heading_prefix {
+        position: relative;
+
+        &::before {
+            content: "Heat";
+            font-family: $font-brusheo;
+            position: absolute;
+            top: -1rem;
+            left: -11%;
+            color: $secondary;
+            font-size: 36px;
+            transform: rotate(-15deg);
+        }
+
+        &::after {
+            content: "";
+            background: url("data:image/svg+xml,%3Csvg width='21' height='16' viewBox='0 0 21 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.5 12.9993C4.46047 10.2782 6.6337 7.72811 8.21429 4.76275C8.44927 4.32189 8.74993 2.53078 8.78571 3.11544C8.9413 5.65706 17.4732 12.2271 18.5 10.2538' stroke='%239159E8' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
+            position: absolute;
+            bottom: 0;
+            left: -7%;
+            width: 21px;
+            height: 16px;
+        }
+    }
+
     @include media-breakpoint-down(sm) {
         padding: 70px 0;
 
@@ -623,7 +709,7 @@ section.testimonials {
 
         .section_right {
             overflow: hidden;
-            
+
             @include media-breakpoint-up(md) {
                 position: absolute;
                 top: 0;
@@ -637,7 +723,9 @@ section.testimonials {
 
                 .slick-list,
                 .slick-track {
-                    height: 100%;
+                    @include media-breakpoint-up(md) {
+                        height: 100%;
+                    }
                 }
 
                 .slick-track {
@@ -656,6 +744,45 @@ section.testimonials {
                     @include media-breakpoint-down(sm) {
                         padding: 37px 24px;
                         margin: 0 4px;
+                    }
+                }
+
+                .slick-dots {
+                    display: flex !important;
+                    bottom: -30px;
+                    list-style-type: none;
+                    justify-content: center;
+
+                    @include media-breakpoint-up(md) {
+                        justify-content: start;
+                    }
+
+                    li {
+                        margin: 0 4.5px;
+                        width: 13px;
+                        height: 13px;
+
+                        button:before {
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+
+                    button {
+                        display: block;
+                        width: 13px;
+                        height: 13px;
+                        padding: 0;
+                        border: none;
+                        text-indent: -9999px;
+                        border-radius: 50%;
+                        background-color: $light-grey;
+                        opacity: 0.3;
+                    }
+
+                    li.slick-active button {
+                        background-color: $secondary;
+                        opacity: 0.6;
                     }
                 }
             }

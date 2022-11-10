@@ -71,7 +71,8 @@ $(() => {
             {
                 breakpoint: 540,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1,
+                    dots: true,
                 }
             }
         ]
@@ -84,8 +85,7 @@ let formSlick = $("#form_slider").slick({
     arrows: false,
     infinite: false,
     draggable: false,
-    // dots: true,
-    // appendDots: $('.slick-slider-dots'),
+    dots: true,
     responsive: [
         {
             breakpoint: 540,
@@ -93,7 +93,6 @@ let formSlick = $("#form_slider").slick({
                 slidesToShow: 1,
                 draggable: false,
                 touchMove: false,
-                dots: false,
             }
         }
     ]

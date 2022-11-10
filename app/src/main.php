@@ -176,7 +176,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="buttons d-flex justify-content-start align-items-center flex-wrap mt-5">
+                            <div class="buttons d-flex justify-content-start align-items-center flex-wrap mt-5 position-relative">
                                 <button type="button" id="nextBtn" class="btn btn-quaternary d-inline-flex rounded-pill border-white rounded-0 text-white px-5" onclick="nextPrev(1)">Next</button>
                                 <span class="px-3 py-md-0 py-2 text-tertiary" id="prevBtn" onclick="nextPrev(-1)">Go Back</span>
                             </div>
@@ -196,6 +196,12 @@
                                     <?= renderImg("flight_center.png", 'logo') ?>
                                 </div>
                             </div>
+                        </div>
+                        <div class="arrow">
+                            <svg width="194" height="89" viewBox="0 0 194 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.6602 32.4014C29.3218 41.0394 32.585 63.4404 24.8551 73.9306C34.0623 67.4027 55.6984 55.9717 63.5343 65.488" stroke="#F33829" stroke-width="7" />
+                                <path d="M44.1652 47.2649C64.2451 6.11765 147.944 -14.1314 191.143 24.1896" stroke="#F33829" stroke-width="7" />
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -409,7 +415,7 @@
     <div class="container">
         <div class="row align-items-center pb-5 pb-md-7 gy-4">
             <div class="col-lg-5">
-                <div class="fs-96 text-primary font-articulat-heavy text-center text-md-start lh-3 ls-2">Our Vision<span class="text-quaternary">.</span></div>
+                <div class="fs-96 text-primary font-articulat-heavy text-center text-md-start lh-3 ls-2">Our <span class="vision_heading_prefix">Vision</span><span class="text-quaternary">.</span></div>
             </div>
             <div class="col-lg-6">
                 <div class="fs-32 ls-2 fw-500 text-center text-md-start description">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
