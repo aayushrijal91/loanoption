@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "LoanOptions";
+$site = "LoanOptions.ai";
 $phone_number = "0432 406 340";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";

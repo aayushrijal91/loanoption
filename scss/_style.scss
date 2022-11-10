@@ -496,11 +496,28 @@ section.testimonials {
     }
 }
 
-footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+section.footer_contact {
+    background: $tertiary;
+    padding: 80px 0;
 
-    @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
+    .flight_center {
+        background: imgUrl('banner_right.jpg') center;
+        background-size: cover;
+        padding: 40px;
+        border-radius: 20px;
+        overflow: hidden;
+        color: $white;
+    }
+}
+
+footer {
+    font-size: 12px;
+    background-color: $dark;
+    color: $light-grey;
+
+    .capify {
+        padding: 18px 27px;
+        border-radius: 20px;
+        background: $green;
     }
 }

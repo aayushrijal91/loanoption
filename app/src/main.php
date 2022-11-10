@@ -551,16 +551,47 @@
     </div>
 </section>
 
+<section class="footer_contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="flight_center">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-9">
+                            <div class="fs-48 font-articulat-heavy lh-3">Win a $1500* Flight Center Gift Card for your Next Trip<span class="text-quaternary">.</div>
+                            <div class="fs-20 fw-700 pt-3">Get Funded with us to Enter</div>
+                        </div>
+                        <div class="col-lg-auto"><?= renderImg('flight_center.png', 'logo') ?></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="h-100 bg-secondary rounded-20 text-center d-flex align-items-center flex-column justify-content-center">
+                    <div class="fs-32 ls-2 text-white fw-700 lh-1 pb-3">Request A Quick<br> Quote Today</div>
+                    <a href="#form" id="seeTestimonials" class="btn d-inline-flex rounded-pill btn-quaternary text-white">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">
             <div class="col-auto">
-                <div class="row gx-2 gx-md-3 text-white justify-content-center">
-                    <div class="col-12 text-center pb-3 d-lg-none">
-                        <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
-                            <?= renderImg("aiims.png", "logo") ?>
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <div class="capify"><?= renderImg('capify.png', 'logo') ?></div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="./">
+                            <?= renderImg("logo.png", "logo") ?>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="row gx-2 gx-md-3 justify-content-center">
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                     <div class="col-auto">|</div>
                     <div class="col-auto text-center"><?= $site ?></div>
