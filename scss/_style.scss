@@ -49,7 +49,7 @@ header {
             border-radius: 20px;
             padding: 60px;
             overflow: hidden;
-            
+
             @include media-breakpoint-down(sm) {
                 padding: 60px 0 30px;
                 background: none;
@@ -320,16 +320,40 @@ section.loan_types {
 section.our_commitment {
     padding: 188px 0 208px;
     background-color: $primary;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+
+        .description {
+            font-size: 1rem !important;
+        }
+    }
 }
 
 section.about_us {
     padding: 178px 0;
     background-color: $tertiary;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+
+        .description {
+            font-size: 1rem !important;
+        }
+    }
 }
 
 section.loan_security {
     background-color: $primary;
     padding: 133px 0 154px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+
+        .description {
+            font-size: 1rem !important;
+        }
+    }
 
     .animated_text {
         color: $secondary-light;
@@ -357,6 +381,10 @@ section.loan_security {
                 transform: translateY(-45px)rotate(-15deg);
             }
         }
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
 
     .loans-slider-wrapper {
@@ -370,6 +398,10 @@ section.loan_security {
             padding: 0;
             margin: 0 0 39px;
             gap: 9px;
+
+            @include media-breakpoint-down(sm) {
+                margin: 30px 0;
+            }
 
             li {
                 list-style: none;
@@ -417,6 +449,10 @@ section.loan_security {
                 padding: 52px;
                 background: $white;
                 border-radius: 20px;
+
+                @include media-breakpoint-down(sm) {
+                    padding: 44px 24px;
+                }
             }
 
             .slick-dots {
@@ -462,10 +498,26 @@ section.loan_security {
 section.lenders {
     background-color: $secondary;
     padding: 147px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+
+        .description {
+            font-size: 1rem !important;
+        }
+    }
 }
 
 section.vision {
     padding: 132px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+
+        .description {
+            font-size: 1rem !important;
+        }
+    }
 
     .vision_card {
         border-radius: 20px;
@@ -496,12 +548,24 @@ section.vision {
             color: $primary;
             transform: rotate(-15deg);
         }
+
+        @include media-breakpoint-down(sm) {
+            min-height: 460px;
+        }
     }
 }
 
 section.testimonials {
     background: $light;
     padding: 162px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+
+        .description {
+            font-size: 1rem !important;
+        }
+    }
 
     .about_testimonials {
         transition: 0.4s all;
@@ -514,8 +578,16 @@ section.testimonials {
             position: relative;
             padding: 120px 80px;
 
+            @include media-breakpoint-down(sm) {
+                padding: 0 24px 73px;
+            }
+
             .hero_heading {
                 padding: 116px 0;
+
+                @include media-breakpoint-down(sm) {
+                    padding: 20px 0;
+                }
             }
 
             .hanging_superhero {
@@ -542,16 +614,23 @@ section.testimonials {
                         transform: translateY(-45px);
                     }
                 }
+
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
             }
         }
 
         .section_right {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            width: 100%;
-            height: 100%;
             overflow: hidden;
+            
+            @include media-breakpoint-up(md) {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: 100%;
+            }
 
             #testimonial_slider {
                 height: 100%;
@@ -573,6 +652,11 @@ section.testimonials {
                     display: flex;
                     flex-direction: column;
                     margin: 0 16px;
+
+                    @include media-breakpoint-down(sm) {
+                        padding: 37px 24px;
+                        margin: 0 4px;
+                    }
                 }
             }
         }
@@ -582,6 +666,10 @@ section.testimonials {
 section.footer_contact {
     background: $tertiary;
     padding: 80px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 40px 0;
+    }
 
     .flight_center {
         background: imgUrl('banner_right.jpg') center;
@@ -597,6 +685,10 @@ footer {
     font-size: 12px;
     background-color: $dark;
     color: $light-grey;
+
+    @include media-breakpoint-down(sm) {
+        padding: 40px 0;
+    }
 
     .capify {
         padding: 18px 27px;

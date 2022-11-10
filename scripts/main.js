@@ -67,6 +67,14 @@ $(() => {
         arrows: false,
         slidesToScroll: 1,
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     })
 });
 

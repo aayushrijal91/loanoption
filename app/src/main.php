@@ -299,11 +299,11 @@
 
 <section class="our_commitment">
     <div class="container">
-        <div class="row gx-xxl-7 align-items-center">
+        <div class="row gx-xxl-7 align-items-center gy-5">
             <div class="col-md-6">
                 <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">More Options.<br>More <span class="text-secondary-light">Capital.</span></div>
-                <div class="text-white fs-32 fw-800 ls-2 py-5">We got you coverd<span class="text-quaternary">.</span></div>
-                <div class="fs-20 text-secondary-light">
+                <div class="text-white fs-32 fw-800 ls-2 py-3 py-md-5">We got you coverd<span class="text-quaternary">.</span></div>
+                <div class="fs-20 text-secondary-light description">
                     Business loans are a valuable way to support various aspects of your organisation. From working capital to everyday expenses, a business loan has got you covered.
                 </div>
             </div>
@@ -315,20 +315,20 @@
 <section class="about_us">
     <div class="container">
         <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">How do I know what <br class="d-none d-xl-block">is right for me?</div>
-        <div class="pt-4 pb-8 fs-20 text-light-grey">
+        <div class="py-5 pt-md-4 pb-md-8 fs-20 text-light-grey description">
             As a business owner you need to be on top of it all. If you’re not, then it's pretty much chaos. Finding the right loan can also be just that if you don’t know what you are looking for. Don’t disappear down the rabbit hole searching through endless financial product descriptions, interest rate offers and advertisements. The best way to find the right personal loan for you is to compare what is out in the market right now. Compare, Compare, Compare! Comparing your options will get you the best deal for your circumstances. You can also consider the below to give you a headstart when you start your search.
         </div>
-        <div class="bg-white rounded-20 p-8">
-            <div class="row justify-content-between gx-xxl-7">
+        <div class="bg-white rounded-20 py-5 px-4 p-md-8">
+            <div class="row justify-content-between gy-6 gx-xxl-7">
                 <div class="col-md-6">
                     <div class="fs-64 lh-1 text-capitalize fw-800">The Right <br class="d-none d-xl-block">interest rate<span class="text-quaternary">.</span></div>
-                    <div class="pt-3 fs-20 text-dark-grey">
+                    <div class="pt-3 fs-20 text-dark-grey description">
                         These days on the news all you hear about is interest rates rising. You can thank the Reserve Bank of Australia (RBA) for that. Interest rates play a vital role, as they dictate the amount you pay on a loan in any given year. When you are looking to get a business loan, be sure to be smart about it, don’t be a dummy and go with the first loan you see. Use LoanOptions to compare and find yourself (without any need to contact anyone else) the best loan for you! More Options. More You.
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="fs-64 lh-1 text-capitalize fw-800 ls-2">More Return (ROI)<span class="text-quaternary">.</span></div>
-                    <div class="pt-3 fs-20 text-dark-grey">
+                    <div class="pt-3 fs-20 text-dark-grey description">
                         Cashflow is King! If you have a proper financing solution in place, you can see your business grow and generate additional (ROI). The saying you have to spend money to make money rings true. The money spent on marketing or other growth opportunities could lead to additional revenue that offsets any interest paid. It allows for more rapid expansion when cashflow would otherwise not allow it. There are many options these days when it comes to structuring your finance, including Overdrafts, lines of credit, working capital loans and invoice/debtor financing. Talk to our Customer Service professionals at LoanOptions today!
                     </div>
                 </div>
@@ -347,7 +347,7 @@
                 <div class="animated_text">That is the<br>question</div>
             </div>
         </div>
-        <div class="pt-4 pb-8 fs-20 text-light-grey">
+        <div class="pt-4 pb-8 fs-20 text-light-grey d-none d-md-block">
             We have said it before, and we’ll say it again, not every loan is the same! When you are applying for a loan it can be either an unsecured or secured loan.
             Finding the right loan can be confusing and to make it easier we’ve defined the below.
         </div>
@@ -361,11 +361,11 @@
 
                 <div class="loans_slider" id="loans_slider">
                     <div class="loan-slider-content">
-                        <div class="row justify-content-between align-items-center h-100 gx-xl-5">
-                            <div class="col-7">
+                        <div class="row justify-content-between align-items-md-center h-100 gx-xl-5">
+                            <div class="col-md-7">
                                 <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Secured<span class="text-quaternary">.</span></div>
-                                <p class="fs-20 text-dark-grey pt-4">A secured loan uses the asset being purchased meaning collateral, in this case the car, as security for the loan. If you the borrower can’t repay the loan, the lender can reclaim the asset to cover the costs. Although if the sale of the asset doesn’t cover the full amount owing, the borrower must pay the difference.</p>
-                                <p class="fs-20 text-dark-grey">The benefits of a secured loan is that usually it comes with a lower and fixed rates, as the risk to your lender is lower.</p>
+                                <p class="fs-20 text-dark-grey pt-md-4 description">A secured loan uses the asset being purchased meaning collateral, in this case the car, as security for the loan. If you the borrower can’t repay the loan, the lender can reclaim the asset to cover the costs. Although if the sale of the asset doesn’t cover the full amount owing, the borrower must pay the difference.</p>
+                                <p class="fs-20 text-dark-grey description">The benefits of a secured loan is that usually it comes with a lower and fixed rates, as the risk to your lender is lower.</p>
                             </div>
                             <div class="col">
                                 <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("secured-lock.png", "lib") ?></div>
@@ -373,12 +373,12 @@
                         </div>
                     </div>
                     <div class="loan-slider-content">
-                        <div class="row justify-content-between align-items-center h-100 gx-xl-5">
-                            <div class="col-7">
+                        <div class="row justify-content-between align-items-md-center h-100 gx-xl-5">
+                            <div class="col-md-7">
                                 <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Unsecured<span class="text-quaternary">.</span></div>
-                                <p class="fs-20 text-dark-grey pt-4">In an unsecured loan scenario the lender does not use any assets as a security
+                                <p class="fs-20 text-dark-grey pt-md-4 description">In an unsecured loan scenario the lender does not use any assets as a security
                                     (no collateral). This comes with a higher charge interest rates when compared to secured as the risk is more for the lender.</p>
-                                <p class="fs-20 text-dark-grey">These types of loans are not generally for cars, because you can usually save money by using the vehicle as security. Some situations that an unsecured loan might be useful for a car, is if the car being purchased is not an acceptable asset for that specific lender, if the asset is too old or even if you wish to borrow more than the actual purchase price by a substantial amount to cover costs or customisations to the car.</p>
+                                <p class="fs-20 text-dark-grey description">These types of loans are not generally for cars, because you can usually save money by using the vehicle as security. Some situations that an unsecured loan might be useful for a car, is if the car being purchased is not an acceptable asset for that specific lender, if the asset is too old or even if you wish to borrow more than the actual purchase price by a substantial amount to cover costs or customisations to the car.</p>
                             </div>
                             <div class="col">
                                 <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("unsecure-lock.png", "lib") ?></div>
@@ -393,10 +393,10 @@
 
 <section class="lenders">
     <div class="container">
-        <div class="row align-items-center gx-xxl-7">
+        <div class="row align-items-center gx-xxl-7 gy-5">
             <div class="col-lg-6">
                 <div class="fs-96 text-white font-articulat-heavy lh-3 ls-2">No bull#@*% here.</div>
-                <div class="fs-20 text-secondary-light pt-5">
+                <div class="fs-20 text-secondary-light pt-4 pt-md-5 description">
                     We’ll tell you what you need to know, enquire with LoanOptions and take one step closer to getting your business loan.
                 </div>
             </div>
@@ -407,15 +407,15 @@
 
 <section class="vision">
     <div class="container">
-        <div class="row align-items-center pb-7">
+        <div class="row align-items-center pb-5 pb-md-7 gy-4">
             <div class="col-lg-5">
-                <div class="fs-96 text-primary font-articulat-heavy lh-3 ls-2">Our Vision<span class="text-quaternary">.</span></div>
+                <div class="fs-96 text-primary font-articulat-heavy text-center text-md-start lh-3 ls-2">Our Vision<span class="text-quaternary">.</span></div>
             </div>
             <div class="col-lg-6">
-                <div class="fs-32 ls-2 fw-500">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
+                <div class="fs-32 ls-2 fw-500 text-center text-md-start description">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row gy-3">
             <div class="col-lg-4">
                 <div class="vision_card fairness">
                     <div>
@@ -476,19 +476,19 @@
 ]; ?>
 <section class="testimonials">
     <div class="container">
-        <div class="row align-items-center mb-5">
+        <div class="row align-items-center mb-4 mb-md-5 gy-4">
             <div class="col-12 col-lg">
                 <div class="fs-96 font-articulat-heavy lh-1 ls-2 text-tertiary">The cool people.</div>
             </div>
             <div class="col-12 col-lg-auto">
                 <div class="row align-items-center gx-5">
-                    <div class="col-auto">
+                    <div class="col-auto d-none d-md-block">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 5.744L8 0L6 5.744H0L4.89 9.572L2.968 15.488L8 11.832L13.032 15.488L11.11 9.572L16 5.744H10Z" fill="#5614BB" />
                         </svg>
                         <span class="fw-600 ls-2 ps-2 lh-1">5/5 Rating</span>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto d-none d-md-block">
                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.6828 2.03539L10.9646 0.317191C10.7615 0.114094 10.4859 0 10.1987 0C9.91141 0 9.63591 0.114094 9.43275 0.317191L7.96697 1.78297L11.217 5.03302L12.6828 3.56725C12.8859 3.36409 13 3.08858 13 2.80132C13 2.51405 12.8859 2.23855 12.6828 2.03539Z" fill="#5614BB" />
                             <path d="M7.19996 2.54998L1.08335 8.66659L0 13L4.33341 11.9166L10.45 5.80004L7.19996 2.54998Z" fill="#5614BB" />
@@ -504,10 +504,13 @@
 
         <div class="about_testimonials">
             <div class="section_left">
-                <div class="row">
+                <div class="row gy-5">
+                    <div class="col-lg-12 d-md-none">
+                        <?= renderImg('hanging-superhero.png', 'lib', 'w-100') ?>
+                    </div>
                     <div class="col-lg-7">
-                        <div class="row align-items-center">
-                            <div class="col-auto"><?= renderImg('google.png', 'logo') ?></div>
+                        <div class="row align-items-center gx-3 gx-md-4">
+                            <div class="col col-md-auto"><?= renderImg('google.png', 'logo') ?></div>
                             <div class="col-auto">
                                 <svg width="126" height="22" viewBox="0 0 126 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M21.2151 7.32361L14.7252 6.38043L11.8213 0.493756C11.7372 0.349449 11.6168 0.229727 11.472 0.146522C11.3273 0.0633158 11.1633 0.0195312 10.9963 0.0195312C10.8294 0.0195312 10.6654 0.0633158 10.5207 0.146522C10.3759 0.229727 10.2555 0.349449 10.1714 0.493756L7.27476 6.38043L0.784913 7.32361C0.615609 7.34822 0.456564 7.41976 0.325771 7.53015C0.194978 7.64053 0.0976564 7.78534 0.0448168 7.94821C-0.00802275 8.11108 -0.0142716 8.28549 0.0267772 8.45173C0.067826 8.61797 0.154534 8.76939 0.277092 8.88887L4.97398 13.4764L3.86301 19.9466C3.834 20.1154 3.85281 20.289 3.9173 20.4477C3.98179 20.6064 4.08939 20.7439 4.22792 20.8445C4.36644 20.9452 4.53035 21.005 4.70109 21.0172C4.87182 21.0294 5.04256 20.9935 5.19397 20.9136L11 17.8528L16.806 20.9081C16.937 20.9777 17.0831 21.0136 17.2313 21.0127C17.3649 21.013 17.497 20.9841 17.6182 20.9279C17.7394 20.8718 17.847 20.7898 17.9332 20.6877C18.0195 20.5857 18.0824 20.4659 18.1176 20.337C18.1528 20.208 18.1594 20.0729 18.137 19.941L17.026 13.4709L21.7229 8.88336C21.8455 8.76389 21.9322 8.61246 21.9732 8.44623C22.0143 8.27999 22.008 8.10557 21.9552 7.94271C21.9023 7.77984 21.805 7.63502 21.6742 7.52464C21.5434 7.41426 21.3844 7.34272 21.2151 7.31811V7.32361Z" fill="#F6C042" />
@@ -517,7 +520,7 @@
                                     <path d="M125.215 7.32361L118.725 6.38043L115.821 0.493756C115.737 0.349449 115.617 0.229727 115.472 0.146522C115.327 0.0633158 115.163 0.0195312 114.996 0.0195312C114.829 0.0195312 114.665 0.0633158 114.521 0.146522C114.376 0.229727 114.255 0.349449 114.171 0.493756L111.275 6.38043L104.785 7.32361C104.616 7.34822 104.457 7.41976 104.326 7.53015C104.195 7.64053 104.098 7.78534 104.045 7.94821C103.992 8.11108 103.986 8.28549 104.027 8.45173C104.068 8.61797 104.155 8.76939 104.277 8.88887L108.974 13.4764L107.863 19.9466C107.834 20.1154 107.853 20.289 107.917 20.4477C107.982 20.6064 108.089 20.7439 108.228 20.8445C108.366 20.9452 108.53 21.005 108.701 21.0172C108.872 21.0294 109.043 20.9935 109.194 20.9136L115 17.8528L120.806 20.9081C120.937 20.9777 121.083 21.0136 121.231 21.0127C121.365 21.013 121.497 20.9841 121.618 20.9279C121.739 20.8718 121.847 20.7898 121.933 20.6877C122.019 20.5857 122.082 20.4659 122.118 20.337C122.153 20.208 122.159 20.0729 122.137 19.941L121.026 13.4709L125.723 8.88336C125.845 8.76389 125.932 8.61246 125.973 8.44623C126.014 8.27999 126.008 8.10557 125.955 7.94271C125.902 7.77984 125.805 7.63502 125.674 7.52464C125.543 7.41426 125.384 7.34272 125.215 7.31811V7.32361Z" fill="#F6C042" />
                                 </svg>
                             </div>
-                            <div class="col-auto fs-24 text-secondary-light fw-600 lh-1">
+                            <div class="col-auto fs-24 text-secondary-light fw-600 lh-1 description">
                                 5 star reviews
                             </div>
                         </div>
@@ -528,7 +531,11 @@
                 <?= renderImg('hanging-superhero.png', 'lib', 'hanging_superhero') ?>
             </div>
             <?php if (!empty($testimonials)) { ?>
-                <div class="section_right smiless ">
+                <div class="section_right">
+                    <div class="text-center d-md-none pt-5 pb-4">
+                        <div class="fs-96 font-articulat-heavy lh-1 ls-2 text-tertiary">More Smiles.</div>
+                        <div class="fw-500 pt-3">Hear from our customers</div>
+                    </div>
                     <div id="testimonial_slider">
                         <?php foreach ($testimonials as $key => $testimonial) { ?>
                             <div class="">
@@ -549,7 +556,7 @@
                                             <path d="M125.215 7.32361L118.725 6.38043L115.821 0.493756C115.737 0.349449 115.617 0.229727 115.472 0.146522C115.327 0.0633158 115.163 0.0195312 114.996 0.0195312C114.829 0.0195312 114.665 0.0633158 114.521 0.146522C114.376 0.229727 114.255 0.349449 114.171 0.493756L111.275 6.38043L104.785 7.32361C104.616 7.34822 104.457 7.41976 104.326 7.53015C104.195 7.64053 104.098 7.78534 104.045 7.94821C103.992 8.11108 103.986 8.28549 104.027 8.45173C104.068 8.61797 104.155 8.76939 104.277 8.88887L108.974 13.4764L107.863 19.9466C107.834 20.1154 107.853 20.289 107.917 20.4477C107.982 20.6064 108.089 20.7439 108.228 20.8445C108.366 20.9452 108.53 21.005 108.701 21.0172C108.872 21.0294 109.043 20.9935 109.194 20.9136L115 17.8528L120.806 20.9081C120.937 20.9777 121.083 21.0136 121.231 21.0127C121.365 21.013 121.497 20.9841 121.618 20.9279C121.739 20.8718 121.847 20.7898 121.933 20.6877C122.019 20.5857 122.082 20.4659 122.118 20.337C122.153 20.208 122.159 20.0729 122.137 19.941L121.026 13.4709L125.723 8.88336C125.845 8.76389 125.932 8.61246 125.973 8.44623C126.014 8.27999 126.008 8.10557 125.955 7.94271C125.902 7.77984 125.805 7.63502 125.674 7.52464C125.543 7.41426 125.384 7.34272 125.215 7.31811V7.32361Z" fill="#F6C042" />
                                         </svg>
                                     </div>
-                                    <div class="fs-20 mb-7">
+                                    <div class="fs-20 mb-7 description">
                                         <?= $testimonial['content'] ?>
                                     </div>
                                 </div>
@@ -567,20 +574,20 @@
 
 <section class="footer_contact">
     <div class="container">
-        <div class="row">
+        <div class="row gy-4">
             <div class="col-lg-8">
                 <div class="flight_center">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-9">
+                    <div class="row justify-content-center justify-content-md-between gy-5">
+                        <div class="col-lg-9 order-2 order-md-1 text-center text-md-start">
                             <div class="fs-48 font-articulat-heavy lh-3">Win a $1500* Flight Center Gift Card for your Next Trip<span class="text-quaternary">.</div>
                             <div class="fs-20 fw-700 pt-3">Get Funded with us to Enter</div>
                         </div>
-                        <div class="col-lg-auto"><?= renderImg('flight_center.png', 'logo') ?></div>
+                        <div class="col-auto order-1 order-md-2"><?= renderImg('flight_center.png', 'logo') ?></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg">
-                <div class="h-100 bg-secondary rounded-20 text-center d-flex align-items-center flex-column justify-content-center">
+                <div class="h-100 bg-secondary rounded-20 text-center d-flex align-items-center flex-column justify-content-center py-5 py-md-4">
                     <div class="fs-32 ls-2 text-white fw-700 lh-1 pb-3">Request A Quick<br> Quote Today</div>
                     <a href="#form" id="seeTestimonials" class="btn d-inline-flex rounded-pill btn-quaternary text-white">Get Started</a>
                 </div>
@@ -591,21 +598,21 @@
 
 <footer>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center">
+        <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
             <div class="col-auto">
-                <div class="row align-items-center">
-                    <div class="col-auto">
-                        <div class="capify"><?= renderImg('capify.png', 'logo') ?></div>
+                <div class="row justify-content-center align-items-center gy-4">
+                    <div class="col-12 col-md-auto order-2 order-md-1">
+                        <div class="capify text-center"><?= renderImg('capify.png', 'logo') ?></div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto order-1 order-md-2">
                         <a href="./">
                             <?= renderImg("logo.png", "logo") ?>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="col-auto">
-                <div class="row gx-2 gx-md-3 justify-content-center">
+            <div class="col-12 col-md-auto">
+                <div class="row gx-2 gx-md-3 justify-content-between justify-content-md-center">
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                     <div class="col-auto">|</div>
                     <div class="col-auto text-center"><?= $site ?></div>
@@ -613,7 +620,7 @@
                     <div class="col-auto text-center">All Rights Reserved</div>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
+            <div class="col-auto">
                 <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                     <?= renderImg("aiims.png", "logo") ?>
                 </a>
