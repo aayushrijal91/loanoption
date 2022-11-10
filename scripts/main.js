@@ -25,6 +25,11 @@ $('#return-to-top').on('click', () => {
 });
 
 $(() => {
+    $('#cta_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+    })
 });
 
 let formSlick = $("#form_slider").slick({
@@ -108,3 +113,13 @@ function validateForm() {
 
     return valid;
 }
+
+let loanCap = 50000;
+
+$('#borrowSlider').on('input', function () {
+    let value = $("#borrowSlider").val();
+    let formattedVal = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    $('#borrowAmount').html(formattedVal);
+    $('.sliderThumb').css('left', (value * (95 / loanCap)) + "%");
+    $('.progressBar').css('width', (value * (98 / loanCap)) + "%");
+});
