@@ -283,6 +283,61 @@
     </div>
 </section>
 
+<section class="our_commitment">
+    <div class="container">
+        <div class="row gx-xxl-7 align-items-center">
+            <div class="col-md-6">
+                <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">More Options.<br>More <span class="text-secondary-light">Capital.</span></div>
+                <div class="text-white fs-32 fw-800 ls-2 py-5">We got you coverd<span class="text-quaternary">.</span></div>
+                <div class="fs-20 text-secondary-light">
+                    Business loans are a valuable way to support various aspects of your organisation. From working capital to everyday expenses, a business loan has got you covered.
+                </div>
+            </div>
+            <div class="col-md-6"><?= renderImg('ourcommitment.png', 'lib') ?></div>
+        </div>
+    </div>
+</section>
+
+<section class="about_us">
+    <div class="container">
+        <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">How do I know what <br class="d-none d-xl-block">is right for me?</div>
+        <div class="pt-4 pb-8 fs-20 text-light-grey">
+            As a business owner you need to be on top of it all. If you’re not, then it's pretty much chaos. Finding the right loan can also be just that if you don’t know what you are looking for. Don’t disappear down the rabbit hole searching through endless financial product descriptions, interest rate offers and advertisements. The best way to find the right personal loan for you is to compare what is out in the market right now. Compare, Compare, Compare! Comparing your options will get you the best deal for your circumstances. You can also consider the below to give you a headstart when you start your search.
+        </div>
+        <div class="bg-white rounded-20 p-8">
+            <div class="row justify-content-between gx-xxl-7">
+                <div class="col-md-6">
+                    <div class="fs-64 lh-1 text-capitalize fw-800">The Right <br class="d-none d-xl-block">interest rate<span class="text-quaternary">.</span></div>
+                    <div class="pt-3 fs-20 text-dark-grey">
+                        These days on the news all you hear about is interest rates rising. You can thank the Reserve Bank of Australia (RBA) for that. Interest rates play a vital role, as they dictate the amount you pay on a loan in any given year. When you are looking to get a business loan, be sure to be smart about it, don’t be a dummy and go with the first loan you see. Use LoanOptions to compare and find yourself (without any need to contact anyone else) the best loan for you! More Options. More You.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="fs-64 lh-1 text-capitalize fw-800 ls-2">More Return (ROI)<span class="text-quaternary">.</span></div>
+                    <div class="pt-3 fs-20 text-dark-grey">
+                        Cashflow is King! If you have a proper financing solution in place, you can see your business grow and generate additional (ROI). The saying you have to spend money to make money rings true. The money spent on marketing or other growth opportunities could lead to additional revenue that offsets any interest paid. It allows for more rapid expansion when cashflow would otherwise not allow it. There are many options these days when it comes to structuring your finance, including Overdrafts, lines of credit, working capital loans and invoice/debtor financing. Talk to our Customer Service professionals at LoanOptions today!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="loan_security">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-xl-7">
+                <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">To secure, or not secure your loan?</div>
+            </div>
+            <div class="col-auto"><div class="animated_text">That is the<br>question</div></div>
+        </div>
+        <div class="pt-4 pb-8 fs-20 text-light-grey">
+        We have said it before, and we’ll say it again, not every loan is the same! When you are applying for a loan it can be either an unsecured or secured loan. 
+Finding the right loan can be confusing and to make it easier we’ve defined the below.
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">

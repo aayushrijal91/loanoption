@@ -9,6 +9,8 @@ $white: #ffffff;
 $light: #F8F8FC;
 $dark: #0F0E1E;
 $grey: #D7D7DC;
+$light-grey: #A8A8B4;
+$dark-grey: #7C7C84;
 
 $theme-colors: (
     ) !default;
@@ -24,6 +26,8 @@ $theme-colors: map-merge(("primary": $primary,
             "light": $light,
             "dark": $dark,
             "grey": $grey,
+            "light-grey": $light-grey,
+            "dark-grey": $dark-grey,
         ),
         $theme-colors
 );
@@ -90,7 +94,7 @@ $utilities: map-merge(("line-height":(property: line-height,
                 responsive: true,
                 values: (1:1,
                     2:2,
-                    3:1.29,
+                    3:0.9,
                     4:4,
                 )),
             "rounded": (property: border-radius,
