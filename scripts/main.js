@@ -31,11 +31,17 @@ $(() => {
         arrows: false,
         responsive: [
             {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 3,
+                    dots: true,
+                    autoplay: true,
+                }
+            },
+            {
                 breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
-                    dots: true,
-                    autoplay: true,
                 }
             },
             {
@@ -76,7 +82,7 @@ $(() => {
         responsive: [
 
             {
-                breakpoint: 900,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 2,
                     dots: true,
@@ -184,6 +190,8 @@ $('#borrowSlider').on('input', function () {
 });
 
 
-$('#seeTestimonials').on('click', function () {
-    $('.about_testimonials').css('transform', 'translateX(-100%)');
-});
+if($(window).width() > 1439){
+    $('#seeTestimonials').on('click', function () {
+        $('.about_testimonials').css('transform', 'translateX(-100%)');
+    });
+}

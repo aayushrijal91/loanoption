@@ -39,7 +39,7 @@
     <div class="banner">
         <div class="container">
             <div class="row gy-md-5">
-                <div class="col-lg-8">
+                <div class="col-xl-8">
                     <div class="banner_left">
                         <div class="fs-70 lh-1 text-white font-articulat-heavy ls-2 mb-3 text-center text-md-start">Offering <span class="text-secondary-light">Business <br>Loans</span> from $5k - $2M<span class="text-quaternary">.</span></div>
                         <div class="text-white fs-32 fw-700 ls-2 py-4 text-capitalize text-center text-md-start">Request a quick quote today</div>
@@ -183,7 +183,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4">
                     <div class="banner_right h-100 rounded-20">
                         <div>
                             <div class="font-articulat-heavy ls-2 fs-48 lh-1 text-white">Win a $1500* Flight Centre Gift Card for your Next Trip<span class="text-quaternary">.</span></div>
@@ -262,38 +262,38 @@
 <section class="loan_types">
     <div class="container">
         <div class="fs-96 font-articulat-heavy text-capitalize ls-2 lh-1 pb-5 pb-md-7">Types Of Business Loans<span class="text-quaternary">.</span></div>
-        <div class="row g-3 gx-md-4">
-            <div class="col-6 col-md-4 col-lg">
+        <div class="row g-3 gx-md-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 col-xl">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_1.png", "lib") ?>
                     <div class="pt-3">Equipment</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-4 col-lg-3 col-xl">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_2.png", "lib") ?>
                     <div class="pt-3">Cashflow</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-4 col-lg-3 col-xl">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_3.png", "lib") ?>
                     <div class="pt-3">Hiring Staff</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-4 col-lg-3 col-xl">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_4.png", "lib") ?>
                     <div class="pt-3">Inventory</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-4 col-lg-3 col-xl">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_5.png", "lib") ?>
                     <div class="pt-3">Day to Day</div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg">
+            <div class="col-6 col-md-4 col-lg-3 col-xl">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_6.png", "lib") ?>
                     <div class="pt-3">Others</div>
@@ -324,7 +324,7 @@
         <div class="py-5 pt-md-4 pb-md-8 fs-20 text-light-grey description">
             As a business owner you need to be on top of it all. If you’re not, then it's pretty much chaos. Finding the right loan can also be just that if you don’t know what you are looking for. Don’t disappear down the rabbit hole searching through endless financial product descriptions, interest rate offers and advertisements. The best way to find the right personal loan for you is to compare what is out in the market right now. Compare, Compare, Compare! Comparing your options will get you the best deal for your circumstances. You can also consider the below to give you a headstart when you start your search.
         </div>
-        <div class="bg-white rounded-20 py-5 px-4 py-md-5 p-lg-8">
+        <div class="bg-white rounded-20 py-5 px-4 py-md-5 p-lg-5 p-xl-8">
             <div class="row justify-content-between gy-6 gx-xxl-7">
                 <div class="col-md-6">
                     <div class="fs-64 lh-1 text-capitalize fw-800">The Right <br class="d-none d-xl-block">interest rate<span class="text-quaternary">.</span></div>
@@ -346,14 +346,14 @@
 <section class="loan_security">
     <div class="container">
         <div class="row align-items-end">
-            <div class="col-xl-7">
+            <div class="col-lg-9 col-xl-7">
                 <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">To secure, or not secure your loan?</div>
             </div>
             <div class="col-auto">
                 <div class="animated_text">That is the<br>question</div>
             </div>
         </div>
-        <div class="pt-4 pb-md-5 pb-lg-8 fs-20 text-light-grey d-none d-md-block">
+        <div class="pt-4 pb-md-5 pb-xl-8 fs-20 text-light-grey d-none d-md-block">
             We have said it before, and we’ll say it again, not every loan is the same! When you are applying for a loan it can be either an unsecured or secured loan.
             Finding the right loan can be confusing and to make it easier we’ve defined the below.
         </div>
@@ -412,11 +412,11 @@
 <section class="vision">
     <div class="container">
         <div class="row align-items-center pb-5 pb-md-7 gy-4">
-            <div class="col-lg-5">
-                <div class="fs-96 text-primary font-articulat-heavy text-center text-lg-start lh-3 ls-2">Our <span class="vision_heading_prefix">Vision</span><span class="text-quaternary">.</span></div>
+            <div class="col-xl-5">
+                <div class="fs-96 text-primary font-articulat-heavy text-center text-xl-start lh-3 ls-2">Our <span class="vision_heading_prefix">Vision</span><span class="text-quaternary">.</span></div>
             </div>
-            <div class="col-lg-6">
-                <div class="fs-32 ls-2 fw-500 text-center text-lg-start description">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
+            <div class="col-xl-6">
+                <div class="fs-32 ls-2 fw-500 text-center text-xl-start description">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
             </div>
         </div>
         <div class="row gy-3 gy-md-4 justify-content-center">
@@ -536,7 +536,7 @@
             </div>
             <?php if (!empty($testimonials)) { ?>
                 <div class="section_right">
-                    <div class="text-center d-lg-none pt-5 pb-4">
+                    <div class="text-center d-xl-none pt-5 pb-4">
                         <div class="fs-96 font-articulat-heavy lh-1 ls-2 text-tertiary">More Smiles.</div>
                         <div class="fw-500 pt-3">Hear from our customers</div>
                     </div>

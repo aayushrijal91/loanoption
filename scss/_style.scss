@@ -282,6 +282,10 @@ header {
             padding: 60px;
             position: relative;
 
+            @include media-breakpoint-down(xl) {
+                padding: 150px 60px 60px;
+            }
+
             @include media-breakpoint-down(lg) {
                 padding: 150px 20px 40px;
             }
@@ -291,10 +295,14 @@ header {
                 top: 38%;
                 left: -10rem;
 
-                @include media-breakpoint-down(lg) {
-                    top: -1rem;
+                @include media-breakpoint-down(xl) {
+                    top: -6rem;
                     left: 37%;
                     transform: rotate(90deg);
+                }
+
+                @include media-breakpoint-down(lg) {
+                    top: -1rem;
                 }
             }
         }
@@ -679,6 +687,10 @@ section.testimonials {
             position: relative;
             padding: 120px 80px;
 
+            @include media-breakpoint-down(xl) {
+                padding: 120px 24px;
+            }
+
             @include media-breakpoint-down(lg) {
                 padding: 0 64px 80px;
             }
@@ -724,6 +736,11 @@ section.testimonials {
                     }
                 }
 
+                @include media-breakpoint-down(xl) {
+                    right: 1rem;
+                    width: 462px;
+                }
+
                 @include media-breakpoint-down(lg) {
                     display: none;
                 }
@@ -733,7 +750,7 @@ section.testimonials {
         .section_right {
             overflow: hidden;
 
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(xl) {
                 position: absolute;
                 top: 0;
                 left: 100%;
