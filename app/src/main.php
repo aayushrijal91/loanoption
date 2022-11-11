@@ -2,8 +2,8 @@
     <div class="navigation_bar">
         <div class="container-fluid">
             <div class="row justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-md-auto">
-                    <div class="row align-items-center">
+                <div class="col-lg-auto">
+                    <div class="row align-items-center justify-content-md-between">
                         <div class="col-auto order-2 order-md-1">
                             <div class="capify"><?= renderImg('capify.png', 'logo') ?></div>
                         </div>
@@ -16,7 +16,7 @@
                 </div>
                 <hr>
                 <div class="col-md-auto">
-                    <div class="row justify-content-center align-items-center py-2 py-md-0">
+                    <div class="row justify-content-center align-items-center py-2 py-lg-0">
                         <div class="col-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn btn-primary text-white">
                                 <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
     </div>
     <div class="banner">
         <div class="container">
-            <div class="row">
+            <div class="row gy-md-5">
                 <div class="col-lg-8">
                     <div class="banner_left">
                         <div class="fs-70 lh-1 text-white font-articulat-heavy ls-2 mb-3 text-center text-md-start">Offering <span class="text-secondary-light">Business <br>Loans</span> from $5k - $2M<span class="text-quaternary">.</span></div>
@@ -49,42 +49,42 @@
                                     <div class="fs-32 ls-2 fw-900 pb-4 lh-1">What type of Business Loan are you looking for?</div>
                                     <div class="form-group form-wrapper">
                                         <div class="row radio-toolbar g-3 gx-md-2">
-                                            <div class="col-4 col-md">
+                                            <div class="col-4 col-lg">
                                                 <input class="form-check-input form-control required" type="radio" name="loanType" value="Equipment" id="loantype_equipment">
                                                 <label class="form-check-label" for="loantype_equipment">
                                                     <?= renderImg("loan_type_1.png", "lib") ?>
                                                     <div class="pt-3">Equipment</div>
                                                 </label>
                                             </div>
-                                            <div class="col-4 col-md">
+                                            <div class="col-4 col-lg">
                                                 <input class="form-check-input form-control required" type="radio" name="loanType" value="Cashflow" id="loantype_cashflow" checked>
                                                 <label class="form-check-label" for="loantype_cashflow">
                                                     <?= renderImg("loan_type_2.png", "lib") ?>
                                                     <div class="pt-3">Cashflow</div>
                                                 </label>
                                             </div>
-                                            <div class="col-4 col-md">
+                                            <div class="col-4 col-lg">
                                                 <input class="form-check-input form-control required" type="radio" name="loanType" value="Hiring Staff" id="loantype_hiring_staff">
                                                 <label class="form-check-label" for="loantype_hiring_staff">
                                                     <?= renderImg("loan_type_3.png", "lib") ?>
                                                     <div class="pt-3">Hiring Staff</div>
                                                 </label>
                                             </div>
-                                            <div class="col-4 col-md">
+                                            <div class="col-4 col-lg">
                                                 <input class="form-check-input form-control required" type="radio" name="loanType" value="Inventory" id="loantype_inventory">
                                                 <label class="form-check-label" for="loantype_inventory">
                                                     <?= renderImg("loan_type_4.png", "lib") ?>
                                                     <div class="pt-3">Inventory</div>
                                                 </label>
                                             </div>
-                                            <div class="col-4 col-md">
+                                            <div class="col-4 col-lg">
                                                 <input class="form-check-input form-control required" type="radio" name="loanType" value="Day to Day" id="loantype_day2day">
                                                 <label class="form-check-label" for="loantype_day2day">
                                                     <?= renderImg("loan_type_5.png", "lib") ?>
                                                     <div class="pt-3">Day to Day</div>
                                                 </label>
                                             </div>
-                                            <div class="col-4 col-md">
+                                            <div class="col-4 col-lg">
                                                 <input class="form-check-input form-control required" type="radio" name="loanType" value="Others" id="loantype_others">
                                                 <label class="form-check-label" for="loantype_others">
                                                     <?= renderImg("loan_type_6.png", "lib") ?>
@@ -96,7 +96,7 @@
                                 </div>
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-4 lh-1">How much are you looking to Borrow?</div>
-                                    <div class="px-1">
+                                    <div class="px-1 py-6 py-lg-4">
                                         <div class="borrowAmount fs-64 fw-800 text-grey lh-1 pb-4">$<span id="borrowAmount">0</span></div>
                                         <div class="range">
                                             <div class="sliderThumb"></div>
@@ -139,11 +139,11 @@
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-5">Enter Business Information</div>
                                     <div class="row gy-6">
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">company name?</span></div>
                                             <input type="text" name="companyName" placeholder="Company" class="form-control required">
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">abn?</span></div>
                                             <input type="text" name="abn" placeholder="ABN" class="form-control required">
                                         </div>
@@ -152,11 +152,11 @@
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-5">Enter your Details</div>
                                     <div class="row gy-6">
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="fs-20 fw-800 lh-1">What's your human <span class="text-secondary">first name?</span></div>
                                             <input type="text" name="firstName" placeholder="First Name" class="form-control required">
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="fs-20 fw-800 lh-1">What's your human <span class="text-secondary">last name?</span></div>
                                             <input type="text" name="lastName" placeholder="Last Name" class="form-control required">
                                         </div>
@@ -165,11 +165,11 @@
                                 <div class="tab">
                                     <div class="fs-32 ls-2 fw-900 pb-5">How can we Contact You</div>
                                     <div class="row gy-6">
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">email address?</span></div>
                                             <input type="email" name="email" placeholder="Email" class="form-control required">
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="fs-20 fw-800 lh-1">What's your <span class="text-secondary">contact number?</span></div>
                                             <input type="tel" name="phone" placeholder="Number" class="form-control required">
                                         </div>
@@ -263,37 +263,37 @@
     <div class="container">
         <div class="fs-96 font-articulat-heavy text-capitalize ls-2 lh-1 pb-5 pb-md-7">Types Of Business Loans<span class="text-quaternary">.</span></div>
         <div class="row g-3 gx-md-4">
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-4 col-lg">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_1.png", "lib") ?>
                     <div class="pt-3">Equipment</div>
                 </div>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-4 col-lg">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_2.png", "lib") ?>
                     <div class="pt-3">Cashflow</div>
                 </div>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-4 col-lg">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_3.png", "lib") ?>
                     <div class="pt-3">Hiring Staff</div>
                 </div>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-4 col-lg">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_4.png", "lib") ?>
                     <div class="pt-3">Inventory</div>
                 </div>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-4 col-lg">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_5.png", "lib") ?>
                     <div class="pt-3">Day to Day</div>
                 </div>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md-4 col-lg">
                 <div class="loan_type_option">
                     <?= renderImg("loan_type_6.png", "lib") ?>
                     <div class="pt-3">Others</div>
@@ -306,14 +306,14 @@
 <section class="our_commitment">
     <div class="container">
         <div class="row gx-xxl-7 align-items-center gy-5">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">More Options.<br>More <span class="text-secondary-light">Capital.</span></div>
                 <div class="text-white fs-32 fw-800 ls-2 py-3 py-md-5">We got you coverd<span class="text-quaternary">.</span></div>
                 <div class="fs-20 text-secondary-light description">
                     Business loans are a valuable way to support various aspects of your organisation. From working capital to everyday expenses, a business loan has got you covered.
                 </div>
             </div>
-            <div class="col-md-6"><?= renderImg('ourcommitment.png', 'lib') ?></div>
+            <div class="col-lg-6"><?= renderImg('ourcommitment.png', 'lib', 'w-100') ?></div>
         </div>
     </div>
 </section>
@@ -324,7 +324,7 @@
         <div class="py-5 pt-md-4 pb-md-8 fs-20 text-light-grey description">
             As a business owner you need to be on top of it all. If you’re not, then it's pretty much chaos. Finding the right loan can also be just that if you don’t know what you are looking for. Don’t disappear down the rabbit hole searching through endless financial product descriptions, interest rate offers and advertisements. The best way to find the right personal loan for you is to compare what is out in the market right now. Compare, Compare, Compare! Comparing your options will get you the best deal for your circumstances. You can also consider the below to give you a headstart when you start your search.
         </div>
-        <div class="bg-white rounded-20 py-5 px-4 p-md-8">
+        <div class="bg-white rounded-20 py-5 px-4 py-md-5 p-lg-8">
             <div class="row justify-content-between gy-6 gx-xxl-7">
                 <div class="col-md-6">
                     <div class="fs-64 lh-1 text-capitalize fw-800">The Right <br class="d-none d-xl-block">interest rate<span class="text-quaternary">.</span></div>
@@ -353,42 +353,40 @@
                 <div class="animated_text">That is the<br>question</div>
             </div>
         </div>
-        <div class="pt-4 pb-8 fs-20 text-light-grey d-none d-md-block">
+        <div class="pt-4 pb-md-5 pb-lg-8 fs-20 text-light-grey d-none d-md-block">
             We have said it before, and we’ll say it again, not every loan is the same! When you are applying for a loan it can be either an unsecured or secured loan.
             Finding the right loan can be confusing and to make it easier we’ve defined the below.
         </div>
         <div class="loans-slider-wrapper" id="loans">
-            <div class="container">
-                <ul class="loans-slider-nav">
-                    <li class="active"><a href="javascript:void(0)" class="btn fw-600 text-white loan-slider-btn" slideTarget="0">Secured Loans</a></li>
-                    <li><a href="javascript:void(0)" class="btn fw-600 border-1 text-white loan-slider-btn" slideTarget="1">Unsecured Loans</a></li>
-                    <li class="slide"></li>
-                </ul>
+            <ul class="loans-slider-nav">
+                <li class="active"><a href="javascript:void(0)" class="btn fw-600 text-white loan-slider-btn" slideTarget="0">Secured Loans</a></li>
+                <li><a href="javascript:void(0)" class="btn fw-600 border-1 text-white loan-slider-btn" slideTarget="1">Unsecured Loans</a></li>
+                <li class="slide"></li>
+            </ul>
 
-                <div class="loans_slider" id="loans_slider">
-                    <div class="loan-slider-content">
-                        <div class="row justify-content-between align-items-md-center h-100 gx-xl-5">
-                            <div class="col-md-7">
-                                <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Secured<span class="text-quaternary">.</span></div>
-                                <p class="fs-20 text-dark-grey pt-md-4 description">A secured loan uses the asset being purchased meaning collateral, in this case the car, as security for the loan. If you the borrower can’t repay the loan, the lender can reclaim the asset to cover the costs. Although if the sale of the asset doesn’t cover the full amount owing, the borrower must pay the difference.</p>
-                                <p class="fs-20 text-dark-grey description">The benefits of a secured loan is that usually it comes with a lower and fixed rates, as the risk to your lender is lower.</p>
-                            </div>
-                            <div class="col">
-                                <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("secured-lock.png", "lib") ?></div>
-                            </div>
+            <div class="loans_slider" id="loans_slider">
+                <div class="loan-slider-content">
+                    <div class="row justify-content-between align-items-md-center h-100 gx-xl-5">
+                        <div class="col-lg-7">
+                            <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Secured<span class="text-quaternary">.</span></div>
+                            <p class="fs-20 text-dark-grey pt-md-4 description">A secured loan uses the asset being purchased meaning collateral, in this case the car, as security for the loan. If you the borrower can’t repay the loan, the lender can reclaim the asset to cover the costs. Although if the sale of the asset doesn’t cover the full amount owing, the borrower must pay the difference.</p>
+                            <p class="fs-20 text-dark-grey description">The benefits of a secured loan is that usually it comes with a lower and fixed rates, as the risk to your lender is lower.</p>
+                        </div>
+                        <div class="col">
+                            <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("secured-lock.png", "lib") ?></div>
                         </div>
                     </div>
-                    <div class="loan-slider-content">
-                        <div class="row justify-content-between align-items-md-center h-100 gx-xl-5">
-                            <div class="col-md-7">
-                                <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Unsecured<span class="text-quaternary">.</span></div>
-                                <p class="fs-20 text-dark-grey pt-md-4 description">In an unsecured loan scenario the lender does not use any assets as a security
-                                    (no collateral). This comes with a higher charge interest rates when compared to secured as the risk is more for the lender.</p>
-                                <p class="fs-20 text-dark-grey description">These types of loans are not generally for cars, because you can usually save money by using the vehicle as security. Some situations that an unsecured loan might be useful for a car, is if the car being purchased is not an acceptable asset for that specific lender, if the asset is too old or even if you wish to borrow more than the actual purchase price by a substantial amount to cover costs or customisations to the car.</p>
-                            </div>
-                            <div class="col">
-                                <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("unsecure-lock.png", "lib") ?></div>
-                            </div>
+                </div>
+                <div class="loan-slider-content">
+                    <div class="row justify-content-between align-items-md-center h-100 gx-xl-5">
+                        <div class="col-lg-7">
+                            <div class="fs-64 ls-2 fw-800 lh-1 pb-3">Unsecured<span class="text-quaternary">.</span></div>
+                            <p class="fs-20 text-dark-grey pt-md-4 description">In an unsecured loan scenario the lender does not use any assets as a security
+                                (no collateral). This comes with a higher charge interest rates when compared to secured as the risk is more for the lender.</p>
+                            <p class="fs-20 text-dark-grey description">These types of loans are not generally for cars, because you can usually save money by using the vehicle as security. Some situations that an unsecured loan might be useful for a car, is if the car being purchased is not an acceptable asset for that specific lender, if the asset is too old or even if you wish to borrow more than the actual purchase price by a substantial amount to cover costs or customisations to the car.</p>
+                        </div>
+                        <div class="col">
+                            <div class="rounded-20 bg-grey w-100 h-100 py-4 d-flex justify-content-center"><?= renderImg("unsecure-lock.png", "lib") ?></div>
                         </div>
                     </div>
                 </div>
@@ -415,14 +413,14 @@
     <div class="container">
         <div class="row align-items-center pb-5 pb-md-7 gy-4">
             <div class="col-lg-5">
-                <div class="fs-96 text-primary font-articulat-heavy text-center text-md-start lh-3 ls-2">Our <span class="vision_heading_prefix">Vision</span><span class="text-quaternary">.</span></div>
+                <div class="fs-96 text-primary font-articulat-heavy text-center text-lg-start lh-3 ls-2">Our <span class="vision_heading_prefix">Vision</span><span class="text-quaternary">.</span></div>
             </div>
             <div class="col-lg-6">
-                <div class="fs-32 ls-2 fw-500 text-center text-md-start description">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
+                <div class="fs-32 ls-2 fw-500 text-center text-lg-start description">Empowering customers to find the right loan with <span class="fw-700">fairness, accuracy & speed</span></div>
             </div>
         </div>
-        <div class="row gy-3">
-            <div class="col-lg-4">
+        <div class="row gy-3 gy-md-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
                 <div class="vision_card fairness">
                     <div>
                         <div class="fancyText">Justice!</div>
@@ -430,7 +428,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="vision_card accuracy">
                     <div>
                         <div class="fancyText">See That!</div>
@@ -438,7 +436,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-6 col-lg-4">
                 <div class="vision_card speed">
                     <div>
                         <div class="fancyText">Hella Fast!</div>
@@ -511,7 +509,7 @@
         <div class="about_testimonials">
             <div class="section_left">
                 <div class="row gy-5">
-                    <div class="col-lg-12 d-md-none">
+                    <div class="col-lg-12 d-lg-none">
                         <?= renderImg('hanging-superhero.png', 'lib', 'w-100') ?>
                     </div>
                     <div class="col-lg-7">
@@ -538,7 +536,7 @@
             </div>
             <?php if (!empty($testimonials)) { ?>
                 <div class="section_right">
-                    <div class="text-center d-md-none pt-5 pb-4">
+                    <div class="text-center d-lg-none pt-5 pb-4">
                         <div class="fs-96 font-articulat-heavy lh-1 ls-2 text-tertiary">More Smiles.</div>
                         <div class="fw-500 pt-3">Hear from our customers</div>
                     </div>
@@ -581,7 +579,7 @@
 <section class="footer_contact">
     <div class="container">
         <div class="row gy-4">
-            <div class="col-lg-8">
+            <div class="col-md-8">
                 <div class="flight_center">
                     <div class="row justify-content-center justify-content-md-between gy-5">
                         <div class="col-lg-9 order-2 order-md-1 text-center text-md-start">
@@ -592,8 +590,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg">
-                <div class="h-100 bg-secondary rounded-20 text-center d-flex align-items-center flex-column justify-content-center py-5 py-md-4">
+            <div class="col-md">
+                <div class="h-100 bg-secondary rounded-20 text-center d-flex align-items-center flex-column justify-content-center py-5 py-md-4 px-md-4">
                     <div class="fs-32 ls-2 text-white fw-700 lh-1 pb-3">Request A Quick<br> Quote Today</div>
                     <a href="#form" id="seeTestimonials" class="btn d-inline-flex rounded-pill btn-quaternary text-white">Get Started</a>
                 </div>
@@ -604,7 +602,7 @@
 
 <footer>
     <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
+        <div class="row justify-content-center justify-content-lg-between align-items-center gy-4 gy-lg-0">
             <div class="col-auto">
                 <div class="row justify-content-center align-items-center gy-4">
                     <div class="col-12 col-md-auto order-2 order-md-1">
