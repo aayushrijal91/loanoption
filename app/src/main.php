@@ -308,7 +308,7 @@
         <div class="row gx-xxl-7 align-items-center gy-5">
             <div class="col-lg-6">
                 <div class="fs-96 lh-3 ls-2 text-white font-articulat-heavy">More Options.<br>More <span class="text-secondary-light">Capital.</span></div>
-                <div class="text-white fs-32 fw-800 ls-2 py-3 py-md-5">We got you coverd<span class="text-quaternary">.</span></div>
+                <div class="text-white fs-32 fw-800 ls-2 py-3 py-md-5">We got you covered<span class="text-quaternary">.</span></div>
                 <div class="fs-20 text-secondary-light description">
                     Business loans are a valuable way to support various aspects of your organisation. From working capital to everyday expenses, a business loan has got you covered.
                 </div>
